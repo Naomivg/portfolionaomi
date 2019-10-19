@@ -1,0 +1,55 @@
+*{
+	margin: 0px;
+}
+
+body> header> nav> ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+ul{
+	list-style-type: none;
+}
+
+h1{
+	font-family: "Ubuntu";
+	color: #0783C8;
+	font-size: 2em;
+	text-align: center;
+}
+
+.about{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+p{
+	display: flex;
+	font-family: "Nunito";
+	font-size: 1.5em;
+	width: 10em;
+}
+
+.portfolio{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.portfolio-content{
+	background-color: pink;
+	height: 150px;
+	width: 150px;
+	display: flex;
+	padding: 15px;
+	margin: 10px;
+}
+
+.click{
+	background-image: linear-gradient(90deg, #FF9DC0, #FFEC89);
+	border-style: none;
+	color: white;
+	padding: 5px;
+}
