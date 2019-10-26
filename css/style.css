@@ -2,6 +2,7 @@
 	margin: 0px;
 }
 
+/*navigation*/
 body> header> nav> ul{
 	display: flex;
 	flex-direction: row;
@@ -12,6 +13,16 @@ ul{
 	list-style-type: none;
 }
 
+li{
+	padding: 15px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: black;
+}
+
+
 h1{
 	font-family: "Ubuntu";
 	color: #0783C8;
@@ -19,7 +30,8 @@ h1{
 	text-align: center;
 }
 
-.about{
+/*homepage*/
+#about{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -28,8 +40,8 @@ h1{
 p{
 	display: flex;
 	font-family: "Nunito";
-	font-size: 1.5em;
-	width: 10em;
+	font-size: 15px;
+	width: 12em;
 }
 
 .portfolio{
@@ -48,8 +60,99 @@ p{
 }
 
 .click{
+	display: flex;
+	justify-content: center;
+	text-decoration:none;
+	margin: 5px;
+}
+
+.button{
+	display: flex;
+	justify-content: center;
 	background-image: linear-gradient(90deg, #FF9DC0, #FFEC89);
 	border-style: none;
 	color: white;
 	padding: 5px;
+	width: 80px;
+	font-family: "Ubuntu";
+}
+
+/*.fascinatie > .content > a{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: 10px;
+}
+
+.fascinatie > .content > a > img{
+	width: 40%;
+}*/
+
+/*fotografie*/
+.infofascinatie{
+	display: flex;
+	justify-content: center;
+}
+
+.title{
+	display: flex;
+	justify-content: center;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.content a{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+.content a img{
+	width: 80%;
+}
+
+.hide{
+	display: none;
+}
+
+@media screen and (min-width: 1000px) {
+	p{
+		display: flex;
+		font-family: "Nunito";
+		font-size: 30px;
+		width: 25em;
+	}
+
+	.content {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+	}
+
+	.content a img{
+		margin: 0px;
+	}
+
+	.portfolio{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.portfolio-content{
+		height: 250px;
+		width: 250px;
+		display: flex;
+		padding: 15px;
+		margin: 10px;
+	}
+
+	.portfolio-content img{
+		height: 250px;
+		width: 250px;
+	}
 }
