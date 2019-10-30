@@ -11,6 +11,16 @@ nav{
 	height: 8vh;
 }
 
+nav .nav-links li:hover {
+	background: #FF9DC0;
+}
+
+nav .nav-links li a {
+	display: block; 
+	padding: 1.3em;
+	text-decoration: none;
+}
+
 .nav-links{
 	display: flex;
 	justify-content: space-around;
@@ -31,7 +41,7 @@ nav{
 	width: 100%;
 }
 
-h1, h2{
+h1{
 	font-family: "Ubuntu";
 	color: #0783C8;
 	font-size: 2em;
@@ -42,7 +52,7 @@ h1, h2{
 
 h2{
 	font-family: "Ubuntu";
-	color: #0783C8;
+	color: #FF9DC0;
 	font-size: 1.5em;
 	text-align: center;
 	margin-bottom: 0.1em;
@@ -99,10 +109,36 @@ p{
 	margin: 1em;
 }
 
+/*overmij*/
+.subhead{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 35em;
+}
+
+.subhead h2{
+	display: flex;
+	justify-content: space-between;
+	margin: 1em;
+}
+
+iframe{
+	width: 35em;
+	height: 25em;
+	margin: 2em;
+}
+
+.video{
+	display: flex;
+	justify-content: center;
+}
+
 /*project*/
 .info{
 	display: flex;
-	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 /*fotografie*/
@@ -133,18 +169,76 @@ p{
 	width: 80%;
 }
 
+.extracontent a{
+	display: flex;
+	justify-content: center;
+	margin: 20px;
+}
+
+.extracontent a img{
+	width: 50%;
+}
+
 .hide{
 	display: none;
 }
 
+/*user experience*/
+.experiencemap{
+	width: 50%;
+	margin: 2em;
+}
+
+.contact{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
 @media screen and (min-width: 1000px) {
+	/*navigation*/
+		.nav-links{
+		display: flex;
+		justify-content: space-around;
+		font-size: 1.3em;
+		width: 100%;
+	}
+	nav .nav-links li a {
+		display: block; 
+		padding: 0.8em 5em;
+		text-decoration: none;
+	}
+
 	p{
 		display: flex;
 		font-family: "Poppins", sans-serif;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		width: 30em;
 	}
 
+	/*home*/
+	.portfolio{
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			margin-bottom: 5em;
+		}
+
+		.portfolio-content{
+			height: 250px;
+			width: 250px;
+			display: flex;
+			padding: 15px;
+			margin: 10px;
+		}
+
+		.portfolio-content img{
+			height: 250px;
+			width: 250px;
+		}
+	}
+
+	/*fotografie*/
 	.content {
 		display: flex;
 		justify-content: center;
@@ -155,23 +249,22 @@ p{
 		margin: 0px;
 	}
 
-	.portfolio{
+	.extracontent a{
 		display: flex;
-		flex-direction: row;
-		justify-content: space-around;
-		margin-bottom: 5em;
+		justify-content: center;
+		margin: 20px;
 	}
 
-	.portfolio-content{
-		height: 250px;
-		width: 250px;
-		display: flex;
-		padding: 15px;
-		margin: 10px;
+	.extracontent a img{
+		width: 30%;
 	}
 
-	.portfolio-content img{
-		height: 250px;
-		width: 250px;
+	.hide{
+		display: none;
 	}
-}
+
+	.title{
+		display: flex;
+		justify-content: center;
+	}
+	
