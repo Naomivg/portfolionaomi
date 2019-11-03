@@ -13,11 +13,12 @@ nav{
 
 nav .nav-links li:hover {
 	background: #FF9DC0;
+	font-weight: bold;
 }
 
 nav .nav-links li a {
 	display: block; 
-	padding: 1.3em;
+	padding: 0.8em;
 	text-decoration: none;
 }
 
@@ -41,22 +42,47 @@ nav .nav-links li a {
 	width: 100%;
 }
 
+.topleft{
+	position: absolute;
+  	top: 4em;
+  	width: 50%;
+}
+
 h1{
-	font-family: "Ubuntu";
+	font-family: "Hind", sans-serif;
 	color: #0783C8;
 	font-size: 2em;
+	text-align: center;
+	margin-bottom: 0.1rem;
+	margin-top: 25px;
+}
+
+h2{
+	font-family: "Hind", sans-serif;
+	color: #FF9DC0;
+	font-size: 1.5rem;
 	text-align: center;
 	margin-bottom: 0.1em;
 	margin-top: 25px;
 }
 
-h2{
-	font-family: "Ubuntu";
+.txt{
+	color: #0783C8;
+}
+
+main{
+	margin-bottom: 2em;
+}
+
+h3{
 	color: #FF9DC0;
 	font-size: 1.5em;
-	text-align: center;
-	margin-bottom: 0.1em;
-	margin-top: 25px;
+}
+
+p{
+	font-family: "Poppins", sans-serif;
+	font-size: 1.5rem;
+	width: 18rem;
 }
 
 /*homepage*/
@@ -66,10 +92,8 @@ h2{
 	align-items: center;
 }
 
-p{
-	font-family: "Poppins", sans-serif;
-	font-size: 1.5em;
-	width: 12em;
+.titleheader{
+
 }
 
 .portfolio{
@@ -80,11 +104,30 @@ p{
 
 .portfolio-content{
 	background-color: pink;
-	height: 150px;
-	width: 150px;
+	height: 15rem;
+	width:	15rem;
 	display: flex;
-	padding: 15px;
-	margin: 10px;
+	align-items:  center;
+	flex-direction: column;
+	padding: 2rem;
+	margin: 1rem;
+	border-radius: 2rem;
+}
+
+.portfolio-content a{
+	width: 100%;
+}
+
+.portfolio-content a img{
+	width: 100%;
+}
+
+.titleportfolio{
+	display: flex;
+	justify-content: center;
+	color: white;
+	margin-bottom: 0.5rem;
+	width: 100%;
 }
 
 .click{
@@ -92,41 +135,57 @@ p{
 	justify-content: center;
 	text-decoration:none;
 	color: white;
-	margin: 5px;
-	font-size: 1.2em;
-}
-
-
-.button{
-	display: flex;
-	justify-content: center;
+	font-size: 1.2rem;
 	background-image: linear-gradient(90deg, #FF9DC0, #FFEC89);
-	border-style: none;
-	color: white;
-	padding: 0.5em;
-	width: 10em;
-	border-radius: 5px;
-	margin: 1em;
+	padding: 0.5rem;
+	width: 10rem;
+	border-radius: 1rem;
+	margin: 1rem;
 }
+
+.click:hover{
+	background-image: linear-gradient(90deg, #FFEC89, #FF9DC0);
+	color: black;
+}
+
+.contact a{
+	margin: 1rem;
+}
+
 
 /*overmij*/
+.me{
+	width: 50%;
+	margin-top: 2rem;
+}
+
+.containerp{
+	margin-bottom: 1rem;
+}
+
 .subhead{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	width: 35em;
+	width: 30rem;
 }
 
 .subhead h2{
 	display: flex;
 	justify-content: space-between;
-	margin: 1em;
+	margin: 1rem;
+}
+
+.summary{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 iframe{
-	width: 35em;
-	height: 25em;
-	margin: 2em;
+	width: 30rem;
+	height: 20rem;
+	margin: 2rem;
 }
 
 .video{
@@ -135,10 +194,18 @@ iframe{
 }
 
 /*project*/
+.headerfotografie{
+	width: 100%;
+}
+
 .info{
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+}
+
+.headerproject{
+	width: 100%;
 }
 
 /*fotografie*/
@@ -151,28 +218,34 @@ iframe{
 .title{
 	display: flex;
 	justify-content: center;
+	margin-top: 1rem;
 }
 
 .content {
 	display: flex;
-	justify-content: center;
+	align-items: center;
 	flex-direction: column;
 }
 
 .content a{
-	display: flex;
-	justify-content: center;
-	margin: 20px;
+	display: contents;
+	margin: 2em;
 }
 
 .content a img{
-	width: 80%;
+	width: 70%;
+	height: 100%;
+	margin: 1rem;
+}
+
+.extrastyle{
+	margin-top: 1em;
 }
 
 .extracontent a{
 	display: flex;
 	justify-content: center;
-	margin: 20px;
+	margin: 1rem;
 }
 
 .extracontent a img{
@@ -183,10 +256,29 @@ iframe{
 	display: none;
 }
 
+.extrahide{
+	margin: 0em;
+}
+
 /*user experience*/
+.basic{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.paragraph{
+	width: 15em;
+}
+
 .experiencemap{
 	width: 50%;
 	margin: 2em;
+}
+
+.experience{
+	display: flex;
+	justify-content: center;
 }
 
 .contact{
@@ -194,6 +286,43 @@ iframe{
 	align-items: center;
 	flex-direction: column;
 }
+
+.contact-content{
+	display: flex;
+	flex-direction: column;
+}
+
+.concept{
+	width: 70%;
+}
+
+.concepts a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.prototype{
+	text-decoration: none;
+	color: #0783C8;
+	font-size: 1.1em;
+	font-weight: bold;
+	margin: 1em;
+}
+
+.headerdesignux{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.contactportfolio{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 2em;
+}
+
 
 @media screen and (min-width: 1000px) {
 	/*navigation*/
@@ -212,31 +341,71 @@ iframe{
 	p{
 		display: flex;
 		font-family: "Poppins", sans-serif;
-		font-size: 1.2em;
-		width: 30em;
+		font-size: 1.2rem;
+		width: 40em;
 	}
 
+	/*overmij*/
+	.me{
+		width: 30%;
+		margin-top: 2rem;
+	}
+
+	.summary{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+	
+	iframe{
+	width: 45rem;
+	height: 30rem;
+	margin: 2em;
+}
+
+
 	/*home*/
+	.topleft{
+		 position: absolute;
+  		top: 8rem;
+  		width: 50%;
+	}
+
+	.topleft h1{
+		font-size: 2.5rem;
+	}
+
 	.portfolio{
 			display: flex;
 			flex-direction: row;
 			justify-content: space-around;
-			margin-bottom: 5em;
-		}
-
-		.portfolio-content{
-			height: 250px;
-			width: 250px;
-			display: flex;
-			padding: 15px;
-			margin: 10px;
-		}
-
-		.portfolio-content img{
-			height: 250px;
-			width: 250px;
-		}
+			margin-bottom: 5rem;
 	}
+
+	.portfolio-content{
+			height: 20em;
+			width: 20em;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 2rem;
+			margin: 2rem;
+	}
+
+	.contact-content{
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+	}
+
+	.contact-content a{
+		margin: 1rem;
+	}
+
+	/*project*/
+	.headerproject{
+	width: 100%;
+}
 
 	/*fotografie*/
 	.content {
@@ -245,8 +414,18 @@ iframe{
 		flex-direction: row;
 	}
 
+	.content a{
+		display: contents;
+		margin: 2em;
+	}
+
+	.content > a > .hide{
+		display: none;
+	}
+
 	.content a img{
-		margin: 0px;
+		width: 25%;
+		margin: 2rem;
 	}
 
 	.extracontent a{
@@ -267,4 +446,17 @@ iframe{
 		display: flex;
 		justify-content: center;
 	}
+
+	/*User experience*/
+	.concept{
+		width: 55%;
+	}
+
+	.headerdesignux{
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+}
 	
