@@ -165,7 +165,7 @@ p{
 
 .subhead{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 	width: 30rem;
 }
@@ -344,6 +344,20 @@ iframe{
 		font-size: 1.2rem;
 		width: 40em;
 	}
+
+	/*home*/
+	.subhead{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 30rem;
+}
+
+.subhead h2{
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem;
+}
 
 	/*overmij*/
 	.me{
