@@ -18,14 +18,14 @@ nav .nav-links li:hover {
 
 nav .nav-links li a {
 	display: block; 
-	padding: 0.8em;
+	padding: 0.8rem;
 	text-decoration: none;
 }
 
 .nav-links{
 	display: flex;
 	justify-content: space-around;
-	font-size: 1.3em;
+	font-size: 1.3rem;
 	width: 100%;
 }
 
@@ -51,10 +51,10 @@ nav .nav-links li a {
 h1{
 	font-family: "Hind", sans-serif;
 	color: #0783C8;
-	font-size: 2em;
+	font-size: 2rem;
 	text-align: center;
 	margin-bottom: 0.1rem;
-	margin-top: 25px;
+	margin-top: 3rem;
 }
 
 h2{
@@ -167,6 +167,7 @@ p{
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	width: 30rem;
 }
 
